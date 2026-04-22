@@ -15,8 +15,7 @@ file_path = ""
 
 def add_image():
     global file_path
-    file_path = filedialog.askopenfilename(
-       initialdir="C:/Users/Rafa/OneDrive/Desktop/web deve projects/Tkinter/image generator/pictureds")
+    file_path = filedialog.askopenfilename()
        
     image = Image.open(file_path) 
     width, height = int(image.width/2), int(image.height / 2)
